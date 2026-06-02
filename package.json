@@ -2,7 +2,7 @@
   "name": "destino-riqueza",
   "version": "0.1.0",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
