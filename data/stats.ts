@@ -1,6 +1,10 @@
-export const STATS: { value: string; label: string }[] = [
-  { value: '+200', label: 'Familias asesoradas' },
-  { value: '+8', label: 'Años de experiencia' },
-  { value: '100%', label: 'Transparencia total' },
+export const STATS: { value: string; label: string; href?: string }[] = [
+  { value: '+500', label: 'Familias asesoradas' },
+  { value: '12', label: 'Años de experiencia' },
+  {
+    value: 'MiFID II',
+    label: 'Asesoramiento independiente regulado',
+    href: 'https://www.cnmv.es/portal/mifidii_mifir/mapamifid',
+  },
   { value: '4.9★', label: 'Valoración media' },
 ];

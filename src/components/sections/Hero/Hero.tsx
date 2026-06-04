@@ -49,7 +49,7 @@ export const Hero = () => (
           </div>
           <div className="w-px h-12 bg-gray-200" />
           <div className="flex flex-col">
-            <span className="text-ink font-bold text-xl">+200</span>
+            <span className="text-ink font-bold text-xl">+500</span>
             <span className="text-gray-600 text-xs">familias asesoradas</span>
           </div>
           <div className="w-px h-12 bg-gray-200" />
