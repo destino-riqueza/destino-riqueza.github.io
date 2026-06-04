@@ -5,6 +5,7 @@ import {
   StarRating,
   TrustpilotLink,
 } from '@/src/components/ui';
+import { METRICS } from '@/data';
 
 export const Hero = () => (
   <section
@@ -41,7 +42,7 @@ export const Hero = () => (
         {/* Sellos de confianza */}
         <div className="flex items-center gap-6 mt-4 pt-6 border-t border-gray-200">
           <div className="flex flex-col">
-            <span className="text-ink font-bold text-xl">4.9</span>
+            <span className="text-ink font-bold text-xl">{METRICS.rating}</span>
             <div className="mt-0.5">
               <StarRating rating={5} size={12} />
             </div>
@@ -49,7 +50,7 @@ export const Hero = () => (
           </div>
           <div className="w-px h-12 bg-gray-200" />
           <div className="flex flex-col">
-            <span className="text-ink font-bold text-xl">+500</span>
+            <span className="text-ink font-bold text-xl">{METRICS.families}</span>
             <span className="text-gray-600 text-xs">familias asesoradas</span>
           </div>
           <div className="w-px h-12 bg-gray-200" />
