@@ -15,12 +15,12 @@ export const Process = () => (
         }
       >
         <p className="text-gray-500 max-w-xl mx-auto text-base">
-          En cuatro pasos sencillos, pasas de no saber nada sobre inversiones en
+          En tres pasos sencillos, pasas de no saber nada sobre inversiones en
           oro a tener una cartera funcionando a tu medida.
         </p>
       </SectionHeading>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {STEPS.map((step) => (
           <div key={step.num}>
             <div className="w-16 h-16 rounded-2xl border-2 border-blue flex items-center justify-center mb-5">
