@@ -1,4 +1,4 @@
-export type Testimonial = {
+export type Review = {
   name: string;
   /** Fecha de la reseña en formato 'yyyy/MM/dd'. */
   date: string;
@@ -6,7 +6,7 @@ export type Testimonial = {
   text: string;
 };
 
-export const TESTIMONIALS: Testimonial[] = [
+export const REVIEWS: Review[] = [
   {
     name: 'Gracia Martín',
     date: '2026/04/23',

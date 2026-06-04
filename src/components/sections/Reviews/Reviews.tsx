@@ -1,13 +1,13 @@
 import { compareDesc } from 'date-fns';
 import { ArrowRight, Star } from 'lucide-react';
 import { SectionHeading, TrustpilotLink } from '@/src/components/ui';
-import { SITE, TESTIMONIALS } from '@/data';
+import { REVIEWS, SITE } from '@/data';
 import { parseDate } from '@/src/lib/dates';
 import { ReviewCard } from './ReviewCard';
 
 // Más recientes primero. Array.prototype.sort es estable, por lo que ante
 // fechas iguales se mantiene el orden original del array.
-const sortedTestimonials = [...TESTIMONIALS].sort((a, b) =>
+const sortedReviews = [...REVIEWS].sort((a, b) =>
   compareDesc(parseDate(a.date), parseDate(b.date)),
 );
 
@@ -46,8 +46,8 @@ export const Reviews = () => (
       </SectionHeading>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {sortedTestimonials.map((testimonial) => (
-          <ReviewCard key={testimonial.name} testimonial={testimonial} />
+        {sortedReviews.map((review) => (
+          <ReviewCard key={review.name} review={review} />
         ))}
       </div>
 
