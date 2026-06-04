@@ -29,14 +29,11 @@ export default function AvisoLegalPage() {
           <strong>Domicilio:</strong> {COMPANY.address}
         </li>
         <li>
-          <strong>Correo electrónico:</strong>{' '}
-          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+          <strong>Datos registrales:</strong> {COMPANY.registry}
         </li>
         <li>
-          <strong>Teléfono:</strong>{' '}
-          {CONTACT.whatsapps
-            .map((person) => `${person.phone} (${person.name})`)
-            .join(' · ')}
+          <strong>Correo electrónico:</strong>{' '}
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
         </li>
         <li>
           <strong>Sitio web:</strong> {SITE.domain}
