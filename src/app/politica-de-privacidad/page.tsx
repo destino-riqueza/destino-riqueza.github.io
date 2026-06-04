@@ -37,9 +37,9 @@ export default function PoliticaPrivacidadPage() {
       <h2>2. Datos que tratamos</h2>
       <p>
         Tratamos los datos que nos facilitas voluntariamente cuando contactas
-        con nosotros por correo electrónico, teléfono o WhatsApp, que pueden
-        incluir tu nombre, teléfono, correo electrónico y el contenido de tus
-        consultas. No recogemos datos especialmente protegidos.
+        con nosotros por WhatsApp o correo electrónico, que pueden incluir tu
+        nombre, teléfono, correo electrónico y el contenido de tus consultas. No
+        recogemos datos especialmente protegidos.
       </p>
 
       <h2>3. Finalidad del tratamiento</h2>

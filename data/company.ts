@@ -10,7 +10,7 @@ export const COMPANY: {
 } = {
   legalName: 'DISMINUYE TUS GASTOS S.L.U.',
   taxId: 'B-04.875.100',
-  address: 'C/ Carrera del Duente 10, 04005 Almería',
+  address: 'C/ Carrera del Duende 10, 04005 Almería',
   registry:
     'Registro Mercantil de Almería, tomo 1894, folio 80, hoja A-48362, inscripción 1ª',
 };

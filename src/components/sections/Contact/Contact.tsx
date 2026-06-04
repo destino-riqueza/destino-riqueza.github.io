@@ -15,8 +15,8 @@ export const Contact = () => (
           </h2>
           <div className="gold-divider" />
           <p className="text-gray-500 leading-relaxed">
-            La primera consulta es gratuita. Escríbenos o llámanos y te
-            explicamos, sin presiones ni tecnicismos, cómo podemos ayudarte a
+            La primera consulta es gratuita. Escríbenos por WhatsApp o correo y
+            te explicamos, sin presiones ni tecnicismos, cómo podemos ayudarte a
             construir tu camino hacia la libertad financiera.
           </p>
         </div>

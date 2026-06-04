@@ -2,7 +2,7 @@ export const FAQS: { question: string; answer: string }[] = [
   {
     question: '¿Cómo empiezo a invertir con vosotros?',
     answer:
-      'El primer paso es muy sencillo: contáctanos por WhatsApp, teléfono o correo y concertamos una consulta gratuita sin ningún compromiso. En esa primera conversación te explicamos todo lo que necesitas saber, respondemos a tus dudas y valoramos juntos cuál es el mejor punto de partida para ti.',
+      'El primer paso es muy sencillo: contáctanos por WhatsApp o correo y concertamos una consulta gratuita sin ningún compromiso. En esa primera conversación te explicamos todo lo que necesitas saber, respondemos a tus dudas y valoramos juntos cuál es el mejor punto de partida para ti.',
   },
   {
     question: '¿Cuál es la inversión mínima para empezar?',
