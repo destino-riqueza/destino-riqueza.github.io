@@ -1,10 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/data';
 
-// Requerido para generar el archivo estático con `output: export`.
+// Required to generate the static file with `output: export`.
 export const dynamic = 'force-static';
 
-// trailingSlash: true en next.config → las URLs llevan barra final.
+// trailingSlash: true in next.config → URLs include a trailing slash.
 const url = (path: string) => `${SITE.url}${path}`;
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -4,12 +4,12 @@ import { Footer, Navbar } from '@/src/components/sections';
 
 export type LegalLayoutProps = {
   title: string;
-  /** Fecha de última actualización, en texto (p. ej. "junio de 2026"). */
+  /** Last updated date, as text (e.g. "junio de 2026"). */
   updated: string;
   children: ReactNode;
 };
 
-/** Estructura común de las páginas legales: navbar, cabecera, prosa y footer. */
+/** Shared structure for legal pages: navbar, header, prose and footer. */
 export const LegalLayout: React.FC<LegalLayoutProps> = ({
   title,
   updated,

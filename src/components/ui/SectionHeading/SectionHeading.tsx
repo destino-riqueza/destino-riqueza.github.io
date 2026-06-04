@@ -2,16 +2,16 @@ import type { ReactNode } from 'react';
 import { SectionTag } from '@/src/components/ui/SectionTag';
 
 export type SectionHeadingProps = {
-  /** Texto del tag superior (en mayúsculas decorativas). */
+  /** Top tag text (in decorative uppercase). */
   tag: ReactNode;
-  /** Título principal de la sección. Admite JSX (p. ej. <em>). */
+  /** Main section title. Accepts JSX (e.g. <em>). */
   title: ReactNode;
-  /** Contenido bajo el título (descripción, badges, etc.). */
+  /** Content below the title (description, badges, etc.). */
   children?: ReactNode;
   className?: string;
 };
 
-/** Cabecera centrada reutilizable para las secciones de la landing. */
+/** Reusable centered heading for the landing sections. */
 export const SectionHeading: React.FC<SectionHeadingProps> = ({
   tag,
   title,

@@ -13,7 +13,7 @@ export const Hero = () => (
     className="md:min-h-screen flex items-center relative overflow-hidden pt-16 bg-blue-pale"
   >
     <div className="max-w-7xl mx-auto px-6 py-12 md:py-24 grid md:grid-cols-2 gap-12 items-center w-full">
-      {/* Izquierda: texto */}
+      {/* Left: text */}
       <div className="flex flex-col gap-6">
         <SectionTag>Destino Riqueza</SectionTag>
 
@@ -39,7 +39,7 @@ export const Hero = () => (
           </Button>
         </div>
 
-        {/* Sellos de confianza */}
+        {/* Trust badges */}
         <div className="flex items-center gap-6 mt-4 pt-6 border-t border-gray-200">
           <div className="flex flex-col">
             <span className="text-ink font-bold text-xl">{METRICS.rating}</span>
@@ -50,7 +50,9 @@ export const Hero = () => (
           </div>
           <div className="w-px h-12 bg-gray-200" />
           <div className="flex flex-col">
-            <span className="text-ink font-bold text-xl">{METRICS.families}</span>
+            <span className="text-ink font-bold text-xl">
+              {METRICS.families}
+            </span>
             <span className="text-gray-600 text-xs">familias asesoradas</span>
           </div>
           <div className="w-px h-12 bg-gray-200" />
@@ -61,7 +63,7 @@ export const Hero = () => (
         </div>
       </div>
 
-      {/* Derecha: visual */}
+      {/* Right: visual */}
       <div className="flex justify-center items-center">
         <div className="relative">
           <div className="float-animate">
@@ -75,7 +77,7 @@ export const Hero = () => (
                   />
                 </div>
               </div>
-              {/* Puntos en órbita */}
+              {/* Orbiting dots */}
               <div className="absolute top-4 right-12 w-3 h-3 rounded-full bg-gold opacity-90" />
               <div className="absolute bottom-8 left-8 w-2 h-2 rounded-full bg-blue opacity-70" />
               <div className="absolute top-1/2 -right-4 w-4 h-4 rounded-full border-2 border-blue bg-white" />
@@ -85,7 +87,7 @@ export const Hero = () => (
       </div>
     </div>
 
-    {/* Onda inferior hacia blanco */}
+    {/* Bottom wave into white */}
     <div className="absolute bottom-0 left-0 right-0">
       <svg
         viewBox="0 0 1440 80"

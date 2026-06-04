@@ -16,7 +16,7 @@ export const Navbar = () => (
         />
       </a>
 
-      {/* Navegación de escritorio */}
+      {/* Desktop navigation */}
       <nav className="hidden md:flex items-center gap-7">
         {NAV_LINKS.map((link) => (
           <a
@@ -29,7 +29,7 @@ export const Navbar = () => (
         ))}
       </nav>
 
-      {/* CTA + móvil */}
+      {/* CTA + mobile */}
       <div className="flex items-center gap-3">
         <Button
           href="/#contacto"

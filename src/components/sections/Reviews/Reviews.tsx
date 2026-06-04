@@ -5,8 +5,8 @@ import { REVIEWS, SITE } from '@/data';
 import { parseDate } from '@/src/lib/dates';
 import { ReviewCard } from './ReviewCard';
 
-// Más recientes primero. Array.prototype.sort es estable, por lo que ante
-// fechas iguales se mantiene el orden original del array.
+// Most recent first. Array.prototype.sort is stable, so when
+// dates are equal the original array order is preserved.
 const sortedReviews = [...REVIEWS].sort((a, b) =>
   compareDesc(parseDate(a.date), parseDate(b.date)),
 );
@@ -23,7 +23,7 @@ export const Reviews = () => (
           </>
         }
       >
-        {/* Insignia de Trustpilot */}
+        {/* Trustpilot badge */}
         <div className="inline-flex items-center gap-3 bg-[#00B67A]/10 border border-[#00B67A]/20 rounded-xl px-5 py-3 mt-2">
           <div className="flex gap-0.5">
             {[1, 2, 3, 4, 5].map((i) => (

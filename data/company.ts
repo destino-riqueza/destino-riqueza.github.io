@@ -1,11 +1,11 @@
 export const COMPANY: {
-  /** Nombre o razón social del titular. */
+  /** Holder's name or registered company name. */
   legalName: string;
   /** NIF / CIF. */
   taxId: string;
-  /** Dirección / domicilio completo. */
+  /** Full address. */
   address: string;
-  /** Datos de inscripción en el Registro Mercantil. */
+  /** Companies Registry registration details. */
   registry: string;
 } = {
   legalName: 'DISMINUYE TUS GASTOS S.L.U.',

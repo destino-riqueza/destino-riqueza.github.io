@@ -11,13 +11,13 @@ const sizeStyles: Record<IconBadgeSize, string> = {
 export type IconBadgeProps = {
   icon: LucideIcon;
   size?: IconBadgeSize;
-  /** Tamaño del icono en píxeles. Por defecto 22. */
+  /** Icon size in pixels. Defaults to 22. */
   iconSize?: number;
-  /** Clases extra para el contenedor (márgenes, hover, etc.). */
+  /** Extra classes for the container (margins, hover, etc.). */
   className?: string;
 };
 
-/** Insignia con aro de marca (contorno) que envuelve un icono de Lucide. */
+/** Badge with a brand ring (outline) wrapping a Lucide icon. */
 export const IconBadge: React.FC<IconBadgeProps> = ({
   icon: Icon,
   size = 'md',

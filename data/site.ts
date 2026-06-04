@@ -1,9 +1,9 @@
 export const SITE: {
   name: string;
   domain: string;
-  /** URL absoluta de producción (sin barra final). */
+  /** Absolute production URL (without trailing slash). */
   url: string;
-  /** URL de la ficha de la empresa en Trustpilot. */
+  /** URL of the company's Trustpilot profile. */
   trustpilot: string;
 } = {
   name: 'Destino Riqueza',

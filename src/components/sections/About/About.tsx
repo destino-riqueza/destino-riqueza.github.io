@@ -7,7 +7,7 @@ export const About = () => (
   <section id="quienes-somos" className="py-24 bg-blue-pale">
     <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
-        {/* Imagen */}
+        {/* Image */}
         <div className="relative">
           <div className="aspect-4/5 rounded-3xl overflow-hidden bg-ink flex items-center justify-center shadow-2xl relative">
             <Image
@@ -17,7 +17,7 @@ export const About = () => (
               style={{ objectFit: 'cover' }}
             />
           </div>
-          {/* Tarjeta flotante */}
+          {/* Floating card */}
           <div className="absolute -bottom-6 -right-2 md:-right-6 bg-white rounded-2xl shadow-xl p-5 max-w-xs">
             <div className="flex items-center gap-3">
               <IconBadge icon={Heart} size="sm" iconSize={18} />
@@ -33,7 +33,7 @@ export const About = () => (
           </div>
         </div>
 
-        {/* Texto */}
+        {/* Text */}
         <div>
           <SectionTag>Quiénes somos</SectionTag>
           <h2 className="text-3xl md:text-4xl text-ink mb-4">
@@ -59,7 +59,7 @@ export const About = () => (
             harían, te lo recomiendan.
           </p>
 
-          {/* Valores */}
+          {/* Values */}
           <div className="flex flex-col gap-4">
             {VALUES.map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-4">

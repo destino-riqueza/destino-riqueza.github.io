@@ -1,8 +1,8 @@
 import { COMPANY, CONTACT, SITE } from '@/data';
 
-// Datos estructurados (JSON-LD) para que los buscadores entiendan el negocio.
-// Tipo `Organization` (no `LocalBusiness`) y sin dirección postal: de momento
-// no se quiere presencia física ni aparición en Google Maps.
+// Structured data (JSON-LD) so search engines understand the business.
+// Type `Organization` (not `LocalBusiness`) and without a postal address: for
+// now we don't want a physical presence or to appear on Google Maps.
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',

@@ -2,9 +2,9 @@ import { Star } from 'lucide-react';
 
 export type StarRatingProps = {
   rating: number;
-  /** Número de estrellas a renderizar. Por defecto 5. */
+  /** Number of stars to render. Defaults to 5. */
   count?: number;
-  /** Tamaño de cada estrella en píxeles. Por defecto 14. */
+  /** Size of each star in pixels. Defaults to 14. */
   size?: number;
 };
 

@@ -6,9 +6,7 @@ export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => (
   <div className="bg-blue-pale border border-blue-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
     <div className="flex items-center justify-between mb-4">
       <StarRating rating={review.rating} />
-      <span className="text-xs text-gray-600">
-        {formatDate(review.date)}
-      </span>
+      <span className="text-xs text-gray-600">{formatDate(review.date)}</span>
     </div>
     <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">
       "{review.text}"

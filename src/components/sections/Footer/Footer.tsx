@@ -6,7 +6,7 @@ export const Footer = () => (
   <footer className="bg-blue-pale border-t border-blue-100 py-12">
     <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-3 gap-8 pb-8 border-b border-blue-100">
-        {/* Marca */}
+        {/* Brand */}
         <div>
           <img
             src="/logo.svg"
@@ -20,7 +20,7 @@ export const Footer = () => (
           </p>
         </div>
 
-        {/* Enlaces */}
+        {/* Links */}
         <div>
           <div className="text-ink font-semibold text-sm mb-4">Navegación</div>
           <ul className="flex flex-col gap-1.5 list-none p-0 m-0">
@@ -37,7 +37,7 @@ export const Footer = () => (
           </ul>
         </div>
 
-        {/* Contacto rápido */}
+        {/* Quick contact */}
         <div>
           <div className="text-ink font-semibold text-sm mb-4">
             Contacto rápido

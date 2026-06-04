@@ -1,6 +1,6 @@
 export type Review = {
   name: string;
-  /** Fecha de la reseña en formato 'yyyy/MM/dd'. */
+  /** Review date in 'yyyy/MM/dd' format. */
   date: string;
   rating: number;
   text: string;

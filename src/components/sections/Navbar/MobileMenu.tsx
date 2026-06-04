@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { NAV_LINKS } from '@/data';
 
-// Cada línea del icono; se anima entre hamburguesa y aspa.
+// Each line of the icon; animates between hamburger and cross.
 const LINE =
   'absolute left-0 h-0.5 w-6 rounded-full bg-current transition-all duration-300 ease-out';
 
@@ -12,11 +12,11 @@ export default function MobileMenu() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  // El overlay/panel se montan en el body (portal) para no quedar atrapados
-  // por el `backdrop-filter` del header.
+  // The overlay/panel are mounted on the body (portal) so they aren't trapped
+  // by the header's `backdrop-filter`.
   useEffect(() => setMounted(true), []);
 
-  // Cerrar con la tecla Escape.
+  // Close on the Escape key.
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -53,7 +53,7 @@ export default function MobileMenu() {
       {mounted &&
         createPortal(
           <div className="md:hidden">
-            {/* Overlay: cierra al hacer clic fuera del menú */}
+            {/* Overlay: closes when clicking outside the menu */}
             <button
               type="button"
               aria-label="Cerrar menú"
@@ -64,7 +64,7 @@ export default function MobileMenu() {
               }`}
             />
 
-            {/* Panel desplegable con slide desde arriba */}
+            {/* Dropdown panel sliding from the top */}
             <div
               className={`fixed top-16 left-0 right-0 z-50 bg-white border-t border-gray-100 shadow-lg px-6 py-4 transition-all duration-300 ease-out ${
                 open

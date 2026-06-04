@@ -24,7 +24,7 @@ export type ButtonProps = {
   href: string;
   variant?: ButtonVariant;
   size?: ButtonSize;
-  /** Abre el enlace en una pestaña nueva con rel de seguridad. */
+  /** Opens the link in a new tab with a safe rel attribute. */
   external?: boolean;
   className?: string;
 };

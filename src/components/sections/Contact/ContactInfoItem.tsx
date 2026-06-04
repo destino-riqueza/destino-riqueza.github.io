@@ -4,9 +4,9 @@ import type { ReactNode } from 'react';
 export type ContactInfoItemProps = {
   icon: LucideIcon;
   title: string;
-  /** Clases del contenedor del icono (fondo, borde, hover). */
+  /** Classes for the icon container (background, border, hover). */
   badgeClassName: string;
-  /** Clases de color del icono. */
+  /** Icon color classes. */
   iconClassName: string;
   children: ReactNode;
   href?: string;

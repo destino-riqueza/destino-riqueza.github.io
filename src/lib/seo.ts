@@ -5,7 +5,7 @@ const title = 'Destino Riqueza – Inversión en Oro y Metales Preciosos';
 const description =
   'Generar riqueza es fácil… cuando te acompañamos. Pedro y Estrella te asesoran en inversiones en oro y metales preciosos con cercanía, confianza y transparencia.';
 
-/** Metadata global del sitio. Se re-exporta desde el layout raíz. */
+/** Global site metadata. Re-exported from the root layout. */
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title,

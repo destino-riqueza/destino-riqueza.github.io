@@ -7,7 +7,7 @@ export const Contact = () => (
   <section id="contacto" className="py-24 bg-white">
     <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
-        {/* Izquierda: intro */}
+        {/* Left: intro */}
         <div>
           <SectionTag>Contacto</SectionTag>
           <h2 className="text-3xl md:text-4xl text-ink mb-4">
@@ -21,7 +21,7 @@ export const Contact = () => (
           </p>
         </div>
 
-        {/* Derecha: métodos de contacto */}
+        {/* Right: contact methods */}
         <div className="bg-blue-pale border border-blue-100 rounded-3xl p-8 shadow-sm">
           <h3 className="font-bold text-ink text-lg mb-6">
             Contacta directamente con nosotros

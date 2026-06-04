@@ -32,7 +32,7 @@ export const Process = () => (
         ))}
       </div>
 
-      {/* Banner CTA */}
+      {/* CTA banner */}
       <div className="mt-16 bg-blue-pale border border-blue-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <h3 className="text-ink text-2xl md:text-3xl font-bold mb-2">

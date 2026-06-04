@@ -1,10 +1,10 @@
 export const CONTACT: {
   whatsapps: {
-    /** Nombre de la persona, p. ej. "Pedro". */
+    /** Person's name, e.g. "Pedro". */
     name: string;
-    /** Teléfono en formato visible, p. ej. "+34 600 123 456". */
+    /** Phone in display format, e.g. "+34 600 123 456". */
     phone: string;
-    /** Número para wa.me, solo dígitos con prefijo de país, p. ej. "34600123456". */
+    /** wa.me number, digits only with country code, e.g. "34600123456". */
     whatsapp: string;
   }[];
   email: string;

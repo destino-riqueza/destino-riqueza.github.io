@@ -1,6 +1,6 @@
 import { SITE } from '@/data';
 
-/** Renderiza la palabra "Trustpilot" como enlace a la ficha de la empresa. */
+/** Renders the word "Trustpilot" as a link to the company's profile. */
 export const TrustpilotLink: React.FC<{ className?: string }> = ({
   className = '',
 }) => (

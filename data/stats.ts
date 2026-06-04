@@ -1,16 +1,16 @@
 import { SITE } from './site';
 
 /**
- * Métricas de la empresa. Fuente única de verdad: se consumen tanto en la
- * barra de stats como en los sellos de confianza del Hero, de modo que al
- * actualizar un valor aquí se actualiza en todos los sitios.
+ * Company metrics. Single source of truth: consumed both by the stats
+ * bar and the Hero trust badges, so updating a value here updates it
+ * everywhere.
  */
 export const METRICS = {
-  /** Valoración media (sin el símbolo ★). */
+  /** Average rating (without the ★ symbol). */
   rating: '4.8',
-  /** Familias asesoradas. */
+  /** Families advised. */
   families: '+500',
-  /** Años de experiencia. */
+  /** Years of experience. */
   experience: '12',
 } as const;
 

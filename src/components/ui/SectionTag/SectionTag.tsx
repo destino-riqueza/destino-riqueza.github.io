@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 export type SectionTagProps = {
   children: ReactNode;
-  /** Centra el tag (usado en cabeceras de sección centradas). */
+  /** Centers the tag (used in centered section headings). */
   center?: boolean;
 };
 

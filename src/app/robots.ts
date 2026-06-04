@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { SITE } from '@/data';
 
-// Requerido para generar el archivo estático con `output: export`.
+// Required to generate the static file with `output: export`.
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
