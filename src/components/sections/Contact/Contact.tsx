@@ -1,9 +1,7 @@
-import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { SectionTag } from '@/src/components/ui';
 import { CONTACT } from '@/data';
 import { ContactInfoItem } from './ContactInfoItem';
-
-const telHref = `tel:${CONTACT.phone.replace(/\s/g, '')}`;
 
 export const Contact = () => (
   <section id="contacto" className="py-24 bg-white">
@@ -29,26 +27,19 @@ export const Contact = () => (
             Contacta directamente con nosotros
           </h3>
           <div className="flex flex-col gap-5">
-            <ContactInfoItem
-              icon={MessageCircle}
-              title="WhatsApp"
-              href={`https://wa.me/${CONTACT.whatsapp}`}
-              external
-              badgeClassName="bg-white border-2 border-green-700"
-              iconClassName="text-green-700"
-            >
-              {CONTACT.phone}
-            </ContactInfoItem>
-
-            <ContactInfoItem
-              icon={Phone}
-              title="Teléfono"
-              href={telHref}
-              badgeClassName="bg-white border-2 border-blue"
-              iconClassName="text-blue"
-            >
-              {CONTACT.phone}
-            </ContactInfoItem>
+            {CONTACT.whatsapps.map((person) => (
+              <ContactInfoItem
+                key={person.whatsapp}
+                icon={MessageCircle}
+                title={`WhatsApp · ${person.name}`}
+                href={`https://wa.me/${person.whatsapp}`}
+                external
+                badgeClassName="bg-white border-2 border-green-700"
+                iconClassName="text-green-700"
+              >
+                {person.phone}
+              </ContactInfoItem>
+            ))}
 
             <ContactInfoItem
               icon={Mail}

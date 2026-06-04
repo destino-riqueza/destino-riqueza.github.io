@@ -1,8 +1,6 @@
-import { Mail, MessageCircle, Phone } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/src/components/ui';
 import { CONTACT, LEGAL_LINKS, NAV_LINKS } from '@/data';
-
-const telHref = `tel:${CONTACT.phone.replace(/\s/g, '')}`;
 
 export const Footer = () => (
   <footer className="bg-blue-pale border-t border-blue-100 py-12">
@@ -45,19 +43,18 @@ export const Footer = () => (
             Contacto rápido
           </div>
           <div className="flex flex-col gap-3 items-start">
-            <Button
-              href={`https://wa.me/${CONTACT.whatsapp}`}
-              variant="whatsapp"
-              size="sm"
-              external
-            >
-              <MessageCircle size={16} />
-              Escríbenos por WhatsApp
-            </Button>
-            <Button href={telHref} variant="primary" size="sm">
-              <Phone size={16} />
-              Llámanos
-            </Button>
+            {CONTACT.whatsapps.map((person) => (
+              <Button
+                key={person.whatsapp}
+                href={`https://wa.me/${person.whatsapp}`}
+                variant="whatsapp"
+                size="sm"
+                external
+              >
+                <MessageCircle size={16} />
+                WhatsApp · {person.name}
+              </Button>
+            ))}
             <Button
               href={`mailto:${CONTACT.email}`}
               variant="primary"

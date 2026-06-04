@@ -33,7 +33,10 @@ export default function AvisoLegalPage() {
           <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
         </li>
         <li>
-          <strong>Teléfono:</strong> {CONTACT.phone}
+          <strong>Teléfono:</strong>{' '}
+          {CONTACT.whatsapps
+            .map((person) => `${person.phone} (${person.name})`)
+            .join(' · ')}
         </li>
         <li>
           <strong>Sitio web:</strong> {SITE.domain}
