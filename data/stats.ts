@@ -6,5 +6,9 @@ export const STATS: { value: string; label: string; href?: string }[] = [
     label: 'Asesoramiento independiente regulado',
     href: 'https://www.cnmv.es/portal/mifidii_mifir/mapamifid',
   },
-  { value: '4.9★', label: 'Valoración media' },
+  {
+    value: '4.8★',
+    label: 'Valoración media',
+    href: 'https://www.trustpilot.com/review/destinoriqueza.com',
+  },
 ];
