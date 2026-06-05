@@ -12,7 +12,7 @@ export const Faq = () => (
           </>
         }
       >
-        <p className="text-gray-500 max-w-xl mx-auto text-base">
+        <p className="text-gray-600 max-w-xl mx-auto text-base">
           Si tienes alguna pregunta que no aparece aquí, no dudes en
           contactarnos directamente. Estamos para ayudarte.
         </p>

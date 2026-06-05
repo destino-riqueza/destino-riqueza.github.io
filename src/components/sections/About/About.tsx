@@ -11,7 +11,7 @@ export const About = () => (
         <div className="relative">
           <div className="aspect-4/5 rounded-3xl overflow-hidden bg-ink flex items-center justify-center shadow-2xl relative">
             <Image
-              src="/pedro-y-estrella.jpg"
+              src="/pedro-y-estrella.webp"
               alt="Foto de Pedro y Estrella"
               fill
               style={{ objectFit: 'cover' }}
@@ -67,8 +67,8 @@ export const About = () => (
                   <IconBadge icon={icon} size="sm" iconSize={18} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-ink text-sm mb-0.5">{title}</h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <h3 className="font-bold text-ink text-sm mb-0.5">{title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {desc}
                   </p>
                 </div>

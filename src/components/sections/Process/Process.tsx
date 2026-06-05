@@ -14,7 +14,7 @@ export const Process = () => (
           </>
         }
       >
-        <p className="text-gray-500 max-w-xl mx-auto text-base">
+        <p className="text-gray-600 max-w-xl mx-auto text-base">
           En tres pasos sencillos, pasas de no saber nada sobre inversiones en
           oro a tener una cartera funcionando a tu medida.
         </p>
@@ -27,7 +27,7 @@ export const Process = () => (
               <span className="text-xl font-bold text-blue">{step.num}</span>
             </div>
             <h3 className="font-bold text-ink text-base mb-2">{step.title}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
           </div>
         ))}
       </div>

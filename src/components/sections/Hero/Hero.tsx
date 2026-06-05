@@ -22,7 +22,7 @@ export const Hero = () => (
           <em className="not-italic text-blue">cuando te acompañamos</em>
         </h1>
 
-        <p className="text-gray-500 text-lg leading-relaxed max-w-lg">
+        <p className="text-gray-600 text-lg leading-relaxed max-w-lg">
           Pedro y Estrella te guían paso a paso en el mundo de la inversión en
           oro y metales preciosos. Sin complicaciones, sin tecnicismos, con
           total transparencia.

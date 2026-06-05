@@ -38,7 +38,7 @@ export const Reviews = () => (
           <span className="text-sm font-semibold text-[#00754F]">
             Excelente
           </span>
-          <span className="text-sm text-gray-500">
+          <span className="text-sm text-gray-600">
             en{' '}
             <TrustpilotLink className="font-medium text-[#00754F] hover:underline" />
           </span>
@@ -56,7 +56,7 @@ export const Reviews = () => (
           href={SITE.trustpilot}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-blue transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-blue transition-colors"
         >
           Ver todas las reseñas en Trustpilot
           <ArrowRight size={14} />

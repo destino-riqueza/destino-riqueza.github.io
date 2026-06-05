@@ -28,7 +28,7 @@ export const WhyGold = () => (
           >
             <IconBadge icon={icon} size="md" className="mb-4" />
             <h3 className="text-ink font-bold mb-2 text-base">{title}</h3>
-            <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
+            <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
           </div>
         ))}
       </div>
