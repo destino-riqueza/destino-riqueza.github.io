@@ -1,6 +1,11 @@
-import { Mail, MessageCircle } from 'lucide-react';
+import { Linkedin, Mail, MessageCircle, Youtube } from 'lucide-react';
 import { Button } from '@/src/components/ui';
-import { CONTACT, LEGAL_LINKS, NAV_LINKS } from '@/data';
+import { CONTACT, LEGAL_LINKS, NAV_LINKS, SITE } from '@/data';
+
+const SOCIALS = [
+  { label: 'LinkedIn', href: SITE.linkedin, icon: Linkedin },
+  { label: 'YouTube', href: SITE.youtube, icon: Youtube },
+];
 
 export const Footer = () => (
   <footer className="bg-blue-pale border-t border-blue-100 py-12">
@@ -18,6 +23,20 @@ export const Footer = () => (
           <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
             Generar riqueza es fácil… cuando te acompañamos.
           </p>
+          <div className="flex gap-3 mt-4">
+            {SOCIALS.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                className="w-9 h-9 rounded-full border-2 border-green-700 bg-white flex items-center justify-center text-green-700 hover:bg-green-700/10 transition-colors"
+              >
+                <Icon size={18} />
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Links */}

@@ -50,11 +50,7 @@ const organization = {
     areaServed: 'ES',
     availableLanguage: 'Spanish',
   },
-  sameAs: [
-    SITE.trustpilot,
-    'https://www.linkedin.com/company/destinoriqueza/',
-    'https://www.youtube.com/@Destinoalariqueza',
-  ],
+  sameAs: [SITE.trustpilot, SITE.linkedin, SITE.youtube],
 };
 
 const website = {
