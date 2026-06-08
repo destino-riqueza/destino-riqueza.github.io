@@ -2,8 +2,26 @@ import { StarRating } from '@/src/components/ui';
 import type { Review } from '@/data';
 import { formatDate } from '@/src/lib/dates';
 
-export const ReviewCard: React.FC<{ review: Review }> = ({ review }) => (
-  <div className="bg-blue-pale border border-blue-100 rounded-2xl p-6 hover:shadow-md transition-shadow">
+// Card surface, so the card can stand out over both white and blue-pale
+// section backgrounds.
+const surfaces = {
+  pale: 'bg-blue-pale border-blue-100',
+  white: 'bg-white border-gray-100',
+} as const;
+
+export type ReviewCardProps = {
+  review: Review;
+  /** Background tone. Use 'white' over blue-pale sections. Defaults to 'pale'. */
+  surface?: keyof typeof surfaces;
+};
+
+export const ReviewCard: React.FC<ReviewCardProps> = ({
+  review,
+  surface = 'pale',
+}) => (
+  <div
+    className={`${surfaces[surface]} border rounded-2xl p-6 hover:shadow-md transition-shadow`}
+  >
     <div className="flex items-center justify-between mb-4">
       <StarRating rating={review.rating} />
       <span className="text-xs text-gray-600">{formatDate(review.date)}</span>
